@@ -38,7 +38,6 @@ class Program {
             }
             try
             {
-                
                     var multiples = arrStr.Split([' ', ','], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
                                           .Select(s => double.Parse(s, CultureInfo.InvariantCulture))
                                           .Where(n => double.IsFinite(n) && n % 3 == 0)
